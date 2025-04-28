@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance Radiology Clinic Multan - Appointment Scheduling</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src=""D:\4th Semester\Clinic Appointment Scheduling\app\static\Images\clinic-logo.png" alt="Advance Radiology Clinic Logo">
+                <h1>Advance Radiology Clinic</h1>
+                <p>Multan - Since 2005</p>
+            </div>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#doctors">Staff</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="/login.html" class="btn login-btn">Staff Login</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Advanced Diagnostic Imaging Services</h2>
+                <p>State-of-the-art radiology services with compassionate care in Multan</p>
+                <a href="/appointment.html" class="btn primary-btn">Book an Appointment</a>
+                <a href="#services" class="btn secondary-btn">Our Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Booking Widget -->
+    <section class="appointment-widget">
+        <div class="container">
+            <div class="widget-card">
+                <h3>Quick Appointment</h3>
+                <form id="quick-appointment-form">
+                    <div class="form-group">
+                        <label for="service-type">Service Type</label>
+                        <select id="service-type" required>
+                            <option value="">Select Service</option>
+                            <option value="xray">X-Ray</option>
+                            <option value="ultrasound">Ultrasound</option>
+                            <option value="ctscan">CT Scan</option>
+                            <option value="mri">MRI</option>
+                            <option value="mammography">Mammography</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="appointment-date">Preferred Date</label>
+                        <input type="date" id="appointment-date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="appointment-time">Preferred Time</label>
+                        <select id="appointment-time" required>
+                            <option value="">Select Time</option>
+                            <option value="09:00">09:00 AM</option>
+                            <option value="10:00">10:00 AM</option>
+                            <option value="11:00">11:00 AM</option>
+                            <option value="12:00">12:00 PM</option>
+                            <option value="13:00">01:00 PM</option>
+                            <option value="14:00">02:00 PM</option>
+                            <option value="15:00">03:00 PM</option>
+                            <option value="16:00">04:00 PM</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn primary-btn">Check Availability</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-x-ray"></i>
+                    </div>
+                    <h3>Digital X-Ray</h3>
+                    <p>High-resolution digital imaging for accurate diagnosis with minimal radiation exposure.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-procedures"></i>
+                    </div>
+                    <h3>CT Scan</h3>
+                    <p>Advanced computed tomography for detailed cross-sectional images of your body.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-magnet"></i>
+                    </div>
+                    <h3>MRI</h3>
+                    <p>Magnetic resonance imaging for soft tissue evaluation without radiation.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-baby"></i>
+                    </div>
+                    <h3>Ultrasound</h3>
+                    <p>Real-time imaging using sound waves, ideal for pregnancy and abdominal scans.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-female"></i>
+                    </div>
+                    <h3>Mammography</h3>
+                    <p>Specialized imaging for breast cancer screening and diagnosis.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bone"></i>
+                    </div>
+                    <h3>Bone Densitometry</h3>
+                    <p>Assessment of bone mineral density for osteoporosis diagnosis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctors Section -->
+    <section id="doctors" class="doctors">
+        <div class="container">
+            <h2 class="section-title">Advance Radiology Clinic Multan</h2>
+            <div class="doctors-grid">
+                <div class="doctor-card">
+                    <img src="/static/images/doctor1.jpg" alt="Dr. Ahmed Khan">
+                    <h3>Dr. Abdul Sattar Anjum</h3>
+                    <p class="specialization">Consultant Radiologist</p>
+                    <p class="qualification">MBBS, FCPS (Radiology), Head of Radiology Department, NMU Multan</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="doctor-card">
+                    <img src="/static/images/doctor2.jpg" alt="Dr. Fatima Malik">
+                    <h3>Dr. Sadia Anjum</h3>
+                    <p class="specialization">Senior Radiologist</p>
+                    <p class="qualification">MBBS, MD (Radiology)</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="doctor-card">
+                    <img src="/static/images/doctor3.jpg" alt="Dr. Usman Hashmi">
+                    <h3>Muhammad Sohail</h3>
+                    <p class="specialization">Clinic Receptionist</p>
+                    <p class="qualification">0348-0740835</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Patient Testimonials</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial active">
+                    <p>"The staff at Advance Radiology Clinic was extremely professional. The MRI process was explained to me clearly and the results were delivered promptly to my doctor."</p>
+                    <div class="patient-info">
+                        <img src="/static/images/patient1.jpg" alt="Patient">
+                        <div>
+                            <h4>Mohammad Asif</h4>
+                            <p>CT Scan Patient</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <p>"I was nervous about my mammogram, but the technician made me feel comfortable. The clinic is clean and well-organized with minimal waiting time."</p>
+                    <div class="patient-info">
+                        <img src="/static/images/patient2.jpg" alt="Patient">
+                        <div>
+                            <h4>Ayesha Raza</h4>
+                            <p>Mammography Patient</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <p>"The digital X-ray system at Advance Radiology provided clear images that helped my orthopedic surgeon plan my treatment effectively."</p>
+                    <div class="patient-info">
+                        <img src="/static/images/patient3.jpg" alt="Patient">
+                        <div>
+                            <h4>Kamran Ali</h4>
+                            <p>X-Ray Patient</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button class="prev"><i class="fas fa-chevron-left"></i></button>
+                <div class="dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <button class="next"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Dost Plaza Nishtar road Multan, Pakistan</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <p>+923421015978</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>info@advanceradiologymultan.com</p>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <p>Monday - Saturday: 02:00 PM - 10:00 PM<br>Sunday: <b>Off</b></p>
+                    </div>
+                    <div class="social-media">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" placeholder="Your Phone">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn primary-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Advance Radiology Clinic</h3>
+                    <p>Providing advanced diagnostic imaging services to Multan and surrounding areas since 2005.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#doctors">Doctors</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="/appointment.html">Book Appointment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="#">X-Ray</a></li>
+                        <li><a href="#">Ultrasound</a></li>
+                        <li><a href="#">CT Scan</a></li>
+                        <li><a href="#">MRI</a></li>
+                        <li><a href="#">Mammography</a></li>
+                        <li><a href="#">Bone Densitometry</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to our newsletter for health tips and clinic updates.</p>
+                    <form id="newsletterForm">
+                        <input type="email" placeholder="Your Email" required>
+                        <button type="submit" class="btn primary-btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Advance Radiology Clinic Multan. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
